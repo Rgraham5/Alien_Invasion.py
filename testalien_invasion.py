@@ -9,34 +9,53 @@ class TestAlienInvasion(unittest.TestCase):
 	def tearDown(self):
 		pass
 	
-	def Test_check_keydown_events(self):
+	def Test_check_keydown_events1(self):
+		#if event.key == pygame.K_RIGHT:
+			#self.ship.moving_right = True
 		# Arrange
 		# Act
 		# Assert
 		self.assertTrue(self, event, True)
 
-	def test_check_keyup_events(self):
+	def Test_check_keydown_events2(self):
+		#elif event.key == pygame.K_LEFT:
+			#self.ship.moving_left = True
+		#arrange
+		#act
+		#assert
+		self.assertTrue(self, event, True)
+
+	def test_check_keyup_events1(self):
+		#testing K_q
 		# Arrange
-		event.key = K_q
+		actual = K_q
 		# Act
 		result = sys.exit()
 		# Assert
-		self.assertFalse(result, event)
+		self.assertTrue(self, event)
 
-	def test_create_alien(self):
+	def test_check_keyup_events2(self):
 		# Arrange
+		#elif event.key == pygame.K_LEFT:
+		#	self.ship.moving_left = False 
 		# Act
 		# Assert
+		self.assertFalse(self, event)
 
-	def test_fire_bullet(self):
-		# Arrange
-		# Act
-		# Assert
+	
+#or
 
-	def test_update_bullet(self):
+	def test_check_keyup_events3(self):
+		#if event.key == pygame.K_RIGHT:
+		#	self.ship.moving_right = False
+		#elif event.key == pygame.K_LEFT:
+		#	self.ship.moving_left = False 
 		# Arrange
+		
 		# Act
+		
 		# Assert
+		self.assetFalse(self, event) or self.assertEqual(K_LEFT, K_RIGHT)
 
 	
 
