@@ -9,7 +9,8 @@ def check_edges(self):
 
 class testcheck_edges(unittest.TestCase):
 	def testcheck_edges(self):
-		exp = bool(screen_rect)
+		screen = 0
+		bool(self.screen_rect)
 		self.assertTrue(exp, True)
 
 if __name__ == '__main__':
